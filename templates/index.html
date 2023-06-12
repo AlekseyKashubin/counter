@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Counter</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 0 auto;
+
+        }
+
+        .row {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin: 40px;
+            width: 100px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Web Counter!</h1>
+        <div class="row">
+            <p> Count:{{count}}</p>
+        </div>
+        <form action="/add" method="post">
+            <input type="submit" value="Add2">
+        </form>
+        <form action="/reset" method="post">
+            <input type="submit" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
